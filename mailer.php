@@ -78,8 +78,8 @@ if (isset($_POST['send'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'wesytry5@gmail.com';
-            $mail->Password = '+254711971251';
+            $mail->Username = 'email@gmail.com';
+            $mail->Password = '**********';
             $mail->SMTPOptions = array(
                 'ssl' => array(
                     'verify_peer' => false,
@@ -91,11 +91,11 @@ if (isset($_POST['send'])) {
             $mail->Port = 465;
 
             //Send Email
-            $mail->setFrom('wesytry5@gmail.com');
+            $mail->setFrom('email@gmail.com');
 
             //Recipients
             $mail->addAddress($email);
-            $mail->addReplyTo('wesytry5@gmail.com');
+            $mail->addReplyTo('email@gmail.com');
 
             $imgs = $root . "images/topmax.png";
 
